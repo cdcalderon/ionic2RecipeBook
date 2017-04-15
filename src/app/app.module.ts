@@ -10,6 +10,7 @@ import {TabsPage} from "../pages/tabs/tabs";
 import {RecipesPage} from "../pages/recipes/recipes";
 import {ShoppingListPage} from "../pages/shopping-list/shopping-list";
 import {ShoppingListService} from "../service/shopping-list";
+import {EditRecipePage} from "../pages/edit-recipe/edit-recipe";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {ShoppingListService} from "../service/shopping-list";
     HomePage,
     TabsPage,
     RecipesPage,
-    ShoppingListPage
+    ShoppingListPage,
+    EditRecipePage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import {ShoppingListService} from "../service/shopping-list";
     HomePage,
     TabsPage,
     RecipesPage,
-    ShoppingListPage
+    ShoppingListPage,
+    EditRecipePage
   ],
   providers: [
     StatusBar,
