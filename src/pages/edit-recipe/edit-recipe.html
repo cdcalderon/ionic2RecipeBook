@@ -1,14 +1,32 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-     Edit Recipe
-    </ion-title>
+    <ion-title> {{ mode }} Recipe</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Title</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Description</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Difficulty</ion-label>
+        <ion-select>
+          <ion-option
+            *ngFor="let option of selectOptions"
+            [value]="option">{{ option }}
+          </ion-option>
+        </ion-select>
+      </ion-item>
+
+    </ion-list>
+  </form>
 </ion-content>
